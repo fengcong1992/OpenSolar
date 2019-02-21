@@ -1,9 +1,10 @@
 Package: OpenSolar
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Promoting the Openness and Accessibility of Diverse Public Solar Datasets
 Version: 0.1.0
 Author: Cong Feng
 Maintainer: Cong Feng <cong.feng1@utdallas.edu>
+Depends: R (>= 1.8.0), utils, XML, reshape, jpeg, png, magrittr, dplyr, RPostgreSQL, zoo, imputeTS, caret, RSNNS, nnet, e1071, gbm, randomForest, stats, fBasics
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: What license is it under?
