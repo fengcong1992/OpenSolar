@@ -2,10 +2,10 @@
 \alias{SRRL.read}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Process sky images
+Process SRRL sky images
 }
 \description{
-Process sky images and extract useful features
+Process SRRL sky images and extract useful features
 }
 \usage{
 SRRL.read(timestamp, root_data, returnRGB, processraw, processadv)
@@ -19,30 +19,26 @@ SRRL.read(timestamp, root_data, returnRGB, processraw, processadv)
   the directory of the saved image{s}
   }
   \item{returnRGB}{
-  the directory of the saved image{s}
+  boolean, indicating weather return image pixel RGB values
   }
   \item{processraw}{
-  the directory of the saved image{s}
+  boolean, indicating weather return mean, standard deviation, and the second-order entropy of raw sky image pixel normalized red blue     ratios
   }
   \item{processadv}{
-  the directory of the saved image{s}
+  boolean, indicating weather return thin cloud coverage, and opaque cloud coverage
   }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+A list of sky image feature data frame and sky image RGB tables
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+C. Feng, N. Dawkrajai, D. Yang, B.-M. Hodge, and J. Zhang
 }
 \note{
 %%  ~~further notes~~
@@ -51,17 +47,10 @@ SRRL.read(timestamp, root_data, returnRGB, processraw, processadv)
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{SRRL.download}}
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 
-## The function is currently defined as
-function (x) 
-{
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
