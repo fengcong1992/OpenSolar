@@ -35,7 +35,7 @@ library("devtools")
 Now, you can install the SolMod package, using
 
 ```
-install_github("dazhiyang/SolarData")
+install_github("UTD-DOES/OpenSolar")
 ```
 
 ## Running the tests
@@ -43,18 +43,8 @@ install_github("dazhiyang/SolarData")
 This code segment gives an example on how to run transposition modeling (horizontal to tilt) using a variety of models. (This is not up to date, I will update this section, as well as the package reference manual once the paper is accepted for publication)
 
 ```
-library("SolarData")
-
-#get SURFRAD data from Goodwin_Creek_MS (gwn) station, for the first three days in 2004
-SURFRAD.get(station = 'Goodwin_Creek_MS', year = '2004', day_of_year = c(1:3))
-
-#get PSM data for two locations
-PSM.get(lat = c(42.05, 44), lon = c(-124.02, -110), api_key <- 'FVltdchrxzBCHiSNF6M7R4ua6BFe4j81fbPp8dDP', attributes <- 'ghi,dhi,dni,clearsky_dhi,clearsky_dni,clearsky_ghi,solar_zenith_angle', name = 'John+Smith', affiliation = 'Some+Institute', year = '2016', leap_year = 'true', interval = '30', utc = 'false', reason_for_use = 'research', email = 'yangdazhi.nus@gmail.com', mailing_list = 'false')
-
-#get SRTM, i.e., digital elevation model, data for two boxes with resolution 3 arcsec
-SRTM.list(3, want.plot = TRUE) #check available files
-files <- c("Eurasia/N00E072.hgt.zip", "Eurasia/N00E073.hgt.zip")
-SRTM.get(resolution = 3, files = files)
+library(OpenSolar)
+lsf.str('package:OpenSolar')
 ```
 
 ## License
