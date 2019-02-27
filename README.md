@@ -40,7 +40,7 @@ install_github("UTD-DOES/OpenSolar")
 
 ## Running the tests
 
-This code segment gives an example on how to run transposition modeling (horizontal to tilt) using a variety of models. (This is not up to date, I will update this section, as well as the package reference manual once the paper is accepted for publication)
+This code segment is to test if the package is sucessfully downloaded and list the functions in the package.
 
 ```
 library(OpenSolar)
